@@ -1,0 +1,153 @@
+/* Estilo geral */
+html {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Navegação */
+.nav {
+    padding: 2rem 6rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Seção principal */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    padding: 5rem;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+.avatar {
+    border-radius: 48%;
+    width: 200px;
+    height: 300px;
+    margin-right: 50px;
+    margin-left: 25px;
+}
+
+.main-title {
+    font-size: 4rem;
+}
+
+.main-description {
+    margin: 4rem 0;
+}
+
+/* Botão */
+.button {
+    border-radius: 0.2rem;
+    background-color: #0039CC;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Sobre */
+.about {
+    background-color: #162340;
+    padding: 5rem;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+/* Projetos */
+.projects {
+    padding: 5rem;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.project-image {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 0.6rem;
+}
+
+.project-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.project div {
+    text-align: left;
+}
+
+/* Rodapé */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer p {
+    margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .nav-links {
+        justify-content: center;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .avatar {
+        width: 18rem;
+        height: 18rem;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image {
+        width: 100%;
+        max-width: 38rem;
+    }
+}
